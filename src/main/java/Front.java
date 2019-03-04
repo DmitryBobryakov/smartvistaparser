@@ -12,6 +12,8 @@ public class Front {
 
        /* System.out.println(readed + " " + readed.length());*/
 
+
+
         ParserSwitcher parserSwitcher = new ParserSwitcher(readed);
 
         Message message = parserSwitcher.getMessage();
