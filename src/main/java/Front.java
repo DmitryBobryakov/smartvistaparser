@@ -10,9 +10,7 @@ public class Front {
         Reader reader = new BufferedReader(new InputStreamReader(System.in));
         String readed = ((BufferedReader) reader).readLine();
 
-       /* System.out.println(readed + " " + readed.length());*/
-
-
+        /* System.out.println(readed + " " + readed.length());*/
 
         ParserSwitcher parserSwitcher = new ParserSwitcher(readed);
 
