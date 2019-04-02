@@ -2,7 +2,7 @@ package messages;
 
 import java.util.Arrays;
 
-public class MerchantLogOnRequest0800 implements Message {
+public class MessageId0800 implements Message {
 
     private char[] bitMap;
     private char[] body;
@@ -19,7 +19,7 @@ public class MerchantLogOnRequest0800 implements Message {
     private char[] terminalId = new char[8];
     private char[] merchantId = new char[15];
 
-    public MerchantLogOnRequest0800(char[] bitMap, char[] body) {
+    public MessageId0800(char[] bitMap, char[] body) {
         this.bitMap = bitMap;
         this.body = body;
     }

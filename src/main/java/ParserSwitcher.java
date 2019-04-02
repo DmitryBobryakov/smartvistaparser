@@ -1,4 +1,5 @@
-import messages.MerchantLogOnRequest0800;
+import messages.MessageId0800;
+import messages.MessageId0810;
 import messages.Message;
 
 public class ParserSwitcher {
@@ -32,7 +33,9 @@ public class ParserSwitcher {
     public Message getMessage() {
         switch (this.messageHeader) {
             case "0800":
-                return new MerchantLogOnRequest0800(this.bitMap, this.body);
+                return new MessageId0800(this.bitMap, this.body);
+            case "0810":
+                return new MessageId0810(this.bitMap, this.body);
             default:
                 return null;
         }
