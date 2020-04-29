@@ -1,0 +1,32 @@
+-) Type id
+-) Bitmap
+2) Primary Account Number  llvar n.. 19
+3) Processing code
+4) Amount, Transaction             n 12
+5) 
+7) Date-time transmission
+11) Systems Trace Audit num
+12) DATE & TIME, LOCAL TXN  n 12 YYMMDDhhmmss
+14) EXPIRATION DATE   n 6 YYMMDD
+15)
+22) Point of Service Data Code   n 3 
+24) Function code
+25) Point of Service Condition Code  n 2
+30)
+35) Track 2 Data  llvar z.. 37
+37) Retrieval Reference Number  anp 12 
+38) Approval Code anp 6
+39) Response Code       n 3 
+41) Terminal id
+42) Merchant id
+44) 
+46) 
+48) Additional Data – Private  lllvar ans 999 //доделать разбиение по тегам
+49) Currency Code, Transaction n 3
+52) Personal Identification Data   b 8
+53) COMMUNICATION KEY  Security Related Control Information llvar b .. 16
+54) // difficult 
+55) EMV Data  LLLVAR b ...255
+62) Customer Defined Response lllvar ans 999
+63) PrivateData lllvar ans 999 // доделать разбиение по тегам
+64) Primary MAC data
